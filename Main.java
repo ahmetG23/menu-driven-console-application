@@ -103,4 +103,13 @@ public class Main {
         return maximum;
     }
 
+    private void displayDeviation() {
+        double sum = ((double)(findSum(numbers, "odd") + findSum(numbers, "even")));
+        double avg = sum / numbers.length;
+        for(int i : numbers) {
+            System.out.print(i - avg);
+        }
+        System.out.println();
+    }
+
 }
