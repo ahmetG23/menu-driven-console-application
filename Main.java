@@ -10,7 +10,16 @@ public class Main {
             numbers[i] = rnd.nextInt(100) + 1;
         }
     }
-
+    public static void getUserChoice(){
+        System.out.println("---Menu Options---");
+        System.out.println("1. Find the minimum of the array :");
+        System.out.println("2. Find the maximum of the array :");
+        System.out.println("3. Find the average of the array :");
+        System.out.println("4. Find the sum of elements with odd indexes :");
+        System.out.println("5. Find the sum of elements with even indexes :");
+        System.out.println("6. Exit ");
+    }
+ 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
@@ -18,7 +27,39 @@ public class Main {
         numbers = new int[size];
 
         populate();
+        int chc;
+        Scanner choice = new Scanner(System.in);
+        getUserChoice();
+        chc = choice.nextInt();
+        do{
+            getUserChoice();
+            chc = choice.nextInt();
 
+        switch(chc) {
+            
+            case 1:
+
+                break;
+            case 2:
+
+                break;
+            case 3:
+
+                break;
+            case 4:
+
+                break;
+            case 5:
+
+                break;
+        }
+    
+        }while (chc != 6); 
+            
+        
+
+        
+        choice.close();
         in.close();
     }
 }
